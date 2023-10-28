@@ -106,7 +106,7 @@ const ProductUploadPage = () => {
                         overflow-y-auto
                     "
                 >
-                {/* {categories.map((item: any) => (
+                {categories.map((item) => (
                     <div key={item.label} className='col-span-1'>
                         <CategoryInput
                             onClick={(category) => setCustomValue('category', category)}
@@ -117,7 +117,7 @@ const ProductUploadPage = () => {
                         />
                         
                     </div>
-                ))} */}
+                ))}
 
                 </div>
                 <hr />
