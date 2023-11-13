@@ -2,6 +2,7 @@ import { CldUploadWidget } from 'next-cloudinary';
 import Image from 'next/image';
 import React from 'react'
 import { TbPhotoPlus } from 'react-icons/tb'
+
 interface ImageUploadProps {
     onChange: (Value: string) => void;
     value: string;
@@ -12,11 +13,12 @@ const ImageUpload = ({
     value
 }: ImageUploadProps) => {
     const handleUpload = (result: any) => {
-        console.log('result', result);
+        console.log('### result.info.secure_url', result.info.secure_url);
         onChange(result.info.secure_url);
     }
 
     const uploadPreset = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET
+    
   return (
     <CldUploadWidget
         onUpload={handleUpload}

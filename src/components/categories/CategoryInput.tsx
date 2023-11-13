@@ -19,16 +19,16 @@ const CategoryInput = ({
     <div
       onClick={() => onClick(path)}
       className={`
-      rounded-xl
-      border-2
-      p-4
-      flex
-      flex-col
-      gap-3
-      hover:border-orange-500
-      transition
-      cursor-pointer
-      ${selected ?'border-orange-500' : 'border-neutral-200'}
+        rounded-xl
+        border-2
+        p-4
+        flex
+        flex-col
+        gap-3
+        hover:border-orange-500   
+        transition
+        cursor-pointer
+        ${selected ? 'border-orange-500' : 'border-neutral-200'}
       `}
     >
       <Icon size={30} />
