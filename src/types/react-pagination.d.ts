@@ -1,1 +1,1 @@
-declare module '@lucasmogari/react-pagination';
+declare module "@lucasmogari/react-pagination";

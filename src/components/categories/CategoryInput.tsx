@@ -1,5 +1,5 @@
-import React from 'react'
-import { IconType } from 'react-icons'
+import React from "react";
+import { IconType } from "react-icons";
 
 interface CategoryInputProps {
   icon: IconType;
@@ -13,7 +13,7 @@ const CategoryInput = ({
   label,
   selected,
   onClick,
-  path
+  path,
 }: CategoryInputProps) => {
   return (
     <div
@@ -28,15 +28,13 @@ const CategoryInput = ({
         hover:border-orange-500   
         transition
         cursor-pointer
-        ${selected ? 'border-orange-500' : 'border-neutral-200'}
+        ${selected ? "border-orange-500" : "border-neutral-200"}
       `}
     >
       <Icon size={30} />
-      <div className='font-semibold'>
-        {label}
-      </div>
+      <div className="font-semibold">{label}</div>
     </div>
-  )
-}
+  );
+};
 
-export default CategoryInput
+export default CategoryInput;
